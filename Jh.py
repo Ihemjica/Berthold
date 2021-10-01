@@ -143,8 +143,8 @@ for l in range(int(len(Lines)/3)):
    else:
       tatement+=' on '+str(b)
    print(tatement)
-   print('Profit is '+str(profit*0.2)) 
-   print('Send '+str(profit*0.2/8)+' to 6976976010, 0230702415, 0245123300 and 3057622788') 
-   print('Send '+str(profit*0.2/4/558)+' to your USDT fiat and to me') 
+   print('Profit is '+str(profit*200)) 
+   print('Send '+str(profit*200/8)+' to 6976976010, 0230702415, 0245123300 and 3057622788') 
+   print('Send '+str(profit*200/4/558)+' to your USDT fiat and to me') 
    print() 
   
