@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 from itertools import combinations
 
-X=['Ay25','Fa40','Gi50','Ofr40','Ch15','Sa25','So30','Ro30','Di15']
+X=['Ay25','Fa40','Is10','Gi50','Ofr40','Ch15','Sa25']
 #X.sort()
 AX=[]
-UnAv=['Ch','So','Di','Ro']
+UnAv=['Ch']
 #UnAv.sort()
 f = open("Games.txt", "r")
 Lines = f.readlines()
@@ -74,6 +74,9 @@ for l in range(int(len(Lines)/3)):
          statement+='Sam('+i[-2:]+'k) and '
       if 'Ch' in i:
          statement+='Chianumba('+i[-2:]+'k) and '
+      if 'Is' in i:
+         statement+='Isi('+i[-2:]+'k) and '
+
 
    statement=statement[:-5]
    if switch==0:
@@ -119,6 +122,9 @@ for l in range(int(len(Lines)/3)):
          tatement+='Sam('+i[-2:]+'k) and '
       if 'Ch' in i:
          tatement+='Chianumba('+i[-2:]+'k) and '
+      if 'Is' in i:
+         tatement+='Isi('+i[-2:]+'k) and '
+
 
    tatement=tatement[:-5]
    if switch==0:
