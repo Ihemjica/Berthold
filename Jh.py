@@ -61,21 +61,27 @@ for l in range(int(len(Lines)/3)):
             Y=j
 
    statement=''
+   profit=0
    for i in Y:
       if 'Fa' in i:
          statement+='Fatoba('+i[-2:]+'k) and '
+         profit+=int(i[-2:]) 
       if 'Gi' in i:
          statement+='Gideon('+i[-2:]+'k) and '
+         profit+=int(i[-2:])
       if 'Ofr' in i:
          statement+='Ofure/Oreofe('+i[-2:]+'k) and '
+         profit+=int(i[-2:])
       if 'Ay' in i:
          statement+='Ayo\'s guy('+i[-2:]+'k) and '
       if 'Sa' in i:
          statement+='Sam('+i[-2:]+'k) and '
       if 'Ch' in i:
          statement+='Chianumba('+i[-2:]+'k) and '
+         profit+=int(i[-2:])
       if 'Is' in i:
          statement+='Isi('+i[-2:]+'k) and '
+         profit+=int(i[-2:])
 
 
    statement=statement[:-5]
@@ -112,18 +118,23 @@ for l in range(int(len(Lines)/3)):
    for i in X_Y:
       if 'Fa' in i:
          tatement+='Fatoba('+i[-2:]+'k) and '
+         profit+=int(i[-2:])
       if 'Gi' in i:
          tatement+='Gideon('+i[-2:]+'k) and '
+         profit+=int(i[-2:])
       if 'Ofr' in i:
          tatement+='Ofure/Oreofe('+i[-2:]+'k) and '
+         profit+=int(i[-2:])
       if 'Ay' in i:
          tatement+='Ayo\'s guy('+i[-2:]+'k) and '
       if 'Sa' in i:
          tatement+='Sam('+i[-2:]+'k) and '
       if 'Ch' in i:
          tatement+='Chianumba('+i[-2:]+'k) and '
+         profit+=int(i[-2:])
       if 'Is' in i:
          tatement+='Isi('+i[-2:]+'k) and '
+         profit+=int(i[-2:])
 
 
    tatement=tatement[:-5]
@@ -132,4 +143,8 @@ for l in range(int(len(Lines)/3)):
    else:
       tatement+=' on '+str(b)
    print(tatement)
-   print()
+   print('Profit is '+str(profit*0.2)) 
+   print('Send '+str(profit*0.2/8)+' to 6976976010, 0230702415, 0245123300 and 3057622788') 
+   print('Send '+str(profit*0.2/4/558)+' to your USDT fiat and to me') 
+   print() 
+  
